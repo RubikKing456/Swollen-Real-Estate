@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="f-styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/Logo.png" alt="Logo">
+          </a>
+        </div>
+        <ul class="nav-links"> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="housing.html">Housing</a></li>
+            <li><a href="property listings.html">Property Listings</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="price trends.html">Price Trends</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+        </ul>
+    </nav>
+<div class="banner">
+    <h1 class="hi">Frequently Asked Questions</h1>
+</div>
+<div class="faq-container">
+  <h2>1. General Information</h2>
+  <div class="faq-item">
+    <p class="faq-question">Q: Should I buy or rent?</p>
+    <p class="faq-answer">A: It depends on your long-term plans, financial situation, and local market conditions. Renting can be more flexible if you're unsure of your plans, while buying may be better if you're ready to settle for an extended period.</p>
+  </div>
+
+  <h2>2. The Moving Process</h2>
+  <div class="faq-item">
+    <p class="faq-question">Q: What documents do I need for renting a home?</p>
+    <p class="faq-answer">A: Typically, you'll need identification (passport, residency visa), proof of income or employment, bank statements, and references. Requirements may vary, so check with your landlord or agent.</p>
+  </div>
+
+  <h2>3. Setting Up Utilities</h2>
+  <div class="faq-item">
+    <p class="faq-question">Q: How do I set up utilities in my new home?</p>
+    <p class="faq-answer">A: Contact local utility providers for electricity, water, and gas. You may need to provide proof of address and identification. Some rental properties include utilities in the lease, so check with your landlord.</p>
+  </div>
+
+  <h2>4. Legal and Financial Considerations</h2>
+  <div class="faq-item">
+    <p class="faq-question">Q: What are common fees when renting a home?</p>
+    <p class="faq-answer">A: In addition to rent, you may need to pay a security deposit, agent fees, utility connection fees, and possibly maintenance charges. Check your lease for specifics.</p>
+  </div>
+
+  <h2>5. Settling In</h2>
+  <div class="faq-item">
+    <p class="faq-question">Q: Where can I find local furniture and home goods?</p>
+    <p class="faq-answer">A: Many areas have local and chain stores specializing in home furnishings. Look for online marketplaces, secondhand stores, and local shopping centers for a variety of options.</p>
+  </div>
+
+  <h2>6. Emergency Contacts</h2>
+  <div class="faq-item">
+    <p class="faq-question">Q: What emergency contacts should I have on hand?</p>
+    <p class="faq-answer">A: Familiarize yourself with local emergency numbers (police, fire, medical services). It's also wise to have contacts for local utilities, maintenance services, and property management in case of urgent issues.</p>
+  </div>
+</div>
+  <footer style="background-color: #908a8a; color: #ecf0f1; padding: 40px 20px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+  
+        <!-- Company Info Section -->
+        <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+            <h3 style="color: #000000;">About Us</h3>
+            <p style="color: #000000;">Discover essential real estate tips for buyers, sellers, and investors. 
+              Our website offers practical advice on market trends, property management, and home improvement to 
+              help you make confident and informed decisions in real estate.</p>
+        </div>
+        <!-- Quick Links Section -->
+        <div style="flex: 1; min-width: 150px; margin-bottom: 20px;">
+            <h3 style="color: #000000; text-align: center;">Quick Links</h3>
+            <ul style="list-style: none; padding: 0; text-align: center;">
+                <li><a href="index.html" style="color: #000000;">Home</a></li>
+                <li><a href="housing.html" style="color: #000000;">Housing</a></li>
+                <li><a href="property listings.html" style="color: #000000;">Property Listings</a></li>
+                <li><a href="tips.html" style="color: #000000;">Tips</a></li>
+                <li><a href="price trends.html" style="color: #000000;">Price Trends</a></li>
+                <li><a href="faq.html" style="color: #000000;">FAQ</a></li>
+                <li><a href="contact.html" style="color: #000000;">Contact Us</a></li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 200px; margin-bottom: 20px; text-align: center;">
+          <h3 style="color: #000000; text-align: center;">Follow Us</h3>
+          <div>
+              <a href="#" style="color: #000000; margin-right: 10px;">Facebook</a>
+              <a href="#" style="color: #000000; margin-right: 10px;">Twitter</a>
+              <a href="#" style="color: #000000; margin-right: 10px;">LinkedIn</a>
+              <a href="#" style="color: #000000; margin-right: 10px;">Instagram</a>
+            </div>
+        </div>
+    </div>
+  
+    <div style="text-align: center; border-top: 1px solid #7f8c8d; padding-top: 20px; margin-top: 20px;">
+        <p>&copy; <span id="year"></span> Swollen Real-Estate. All rights reserved.</p>
+        <p style="font-style: italic; color: #bdc3c7;">"Committed to quality and excellence."</p>
+    </div>
+  </footer>
+  <script>
+   $(document).ready(function() {
+    $('.faq-item').on('click', function(e) {
+        if ($(e.target).hasClass('faq-question')) {
+            var $item = $(this);
+            var $question = $item.find('.faq-question');
+            var $answer = $question.next();
+            
+            // Toggle visibility of answer
+            $question.toggleClass('active');
+            $answer.toggleClass('show');
+            
+            // Smooth scroll to the answer
+            if ($answer.hasClass('show')) {
+                $('html, body').animate({
+                    scrollTop: $answer.offset().top
+                }, 500);
+            } else {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 500);
+            }
+        }
+    });
+}); 
+  </script>
+</body>
+</html>

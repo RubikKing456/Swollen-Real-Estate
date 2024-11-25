@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" class="logo">
+        <img src="images/Logo.png" alt="Logo">
+      </a>
+    </div>
+    <ul class="nav-links"> 
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="housing.html">Housing</a></li>
+        <li><a href="property listings.html">Property Listings</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="price trends.html">Price Trends</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+  <br>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 2</div>
+      <img src="images/House Image 1.jpg" style="width:100%">
+      <div class="text">Houses in Dubai</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 2</div>
+      <img src="images/House Image 2.jpg" style="width:100%">
+      <div class="text">Houses in Abu Dhabi</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+  <div class="container"> <!-- Different types of houses -->
+    <div class="left-column"> <!-- Text -->
+      <h3>Different types of housing in Dubai</h3>
+      <br>
+      <p>There are many different types of housing found in Dubai; Villas, Townhouses, Apartments & Mansions. 
+        Each one of these has its advantages and disadvantages. The most common type of housing is villas</p>
+    </div>
+    <br>
+    <br>
+    <div class="right-column"> <!-- Image and Link -->
+      <img class="housing" src="images/Housing.png" alt="Housing Image">
+      <br>
+      <a href="housing.html">More about Housing in Dubai</a>
+    </div>
+</div>
+<div class="container">
+  <div class="left-column2"> <!-- Image and Link -->
+    <img class="housing" src="images/Screenshot 2024-11-04 145608.png" alt="property Listings Image">
+    <br>
+    <a href="property listings.html">More about property Listings in the Dubai</a>
+  </div>
+  <div class="right-column2"> <!-- text -->
+    <h3>Property Listings</h3>
+    <br>
+    <p>In the UAE there are many websites avaliable to purchase, rent or sell homes. 
+      Some of them are Bayut and Property Finder. These websites are avaliable 
+      to everyone within the UAE, making it incredibly useful in the property market.</p>
+  </div>
+</div>
+<div class="container">
+  <div class="left-column">
+    <h3>Price Trends of Housing in the UAE</h3>
+    <br>
+    <p>In the UAE, housing prices have shown significant growth recently. 
+      For instance, apartment prices in Dubai surged by 20.43% in the year leading up to Q1 
+      2024. Over a two-year span, the average price per square foot for apartments increased
+       from AED 1,148 to AED 1,474. This upward trend reflects strong demand in the UAE real
+        estate market, which is projected to continue growing at a rate of 2.25% annually.</p>
+  </div>
+  <div class="right-column">
+    <img class="housing" src="images/Price Trends.png " alt="Price trends Image">
+    <br>
+    <a href="price trends.html">More about price trends in the Dubai</a>
+  </div>
+</div>
+<footer style="background-color: #908a8a; color: #ecf0f1; padding: 40px 20px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+
+      <!-- Company Info Section -->
+      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+          <h3 style="color: #000000;">About Us</h3>
+          <p style="color: #000000;">Discover essential real estate tips for buyers, sellers, and investors. 
+            Our website offers practical advice on market trends, property management, and home improvement to 
+            help you make confident and informed decisions in real estate.</p>
+      </div>
+      <!-- Quick Links Section -->
+      <div style="flex: 1; min-width: 150px; margin-bottom: 20px;">
+          <h3 style="color: #000000; text-align: center;">Quick Links</h3>
+          <ul style="list-style: none; padding: 0; text-align: center;">
+              <li><a href="index.html" style="color: #000000;">Home</a></li>
+              <li><a href="housing.html" style="color: #000000;">Housing</a></li>
+              <li><a href="property listings.html" style="color: #000000;">Property Listings</a></li>
+              <li><a href="tips.html" style="color: #000000;">Tips</a></li>
+              <li><a href="price trends.html" style="color: #000000;">Price Trends</a></li>
+              <li><a href="faq.html" style="color: #000000;">FAQ</a></li>
+              <li><a href="contact.html" style="color: #000000;">Contact Us</a></li>
+          </ul>
+      </div>
+      <div style="flex: 1; min-width: 200px; margin-bottom: 20px; text-align: center;">
+        <h3 style="color: #000000; text-align: center;">Follow Us</h3>
+        <div>
+            <a href="#" style="color: #000000; margin-right: 10px;">Facebook</a>
+            <a href="#" style="color: #000000; margin-right: 10px;">Twitter</a>
+            <a href="#" style="color: #000000; margin-right: 10px;">LinkedIn</a>
+            <a href="#" style="color: #000000; margin-right: 10px;">Instagram</a>
+          </div>
+      </div>
+  </div>
+
+  <div style="text-align: center; border-top: 1px solid #7f8c8d; padding-top: 20px; margin-top: 20px;">
+      <p>&copy; <span id="year"></span> Swollen Real-Estate. All rights reserved.</p>
+      <p style="font-style: italic; color: #bdc3c7;">"Committed to quality and excellence."</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    border: 7px solid #3593ab; /* Blue border */
+}
+
+.banner {
+    text-align: center;
+    padding: 20px;
+    background-image: url('images/idk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    min-height: 200px; /* Ensure there's enough space for content */
+}
+
+.banner-title {
+    font-size: 36px; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Add some space between title and content */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    border: 7px solid #000000;
+}
+
+.logo img {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.nav-links .active {
+    background-color: #556B2F; /* Dark olive green */
+    border-radius: 5px;
+}   
+
+.column {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left column style */
+.left-column {
+    width: 22.5%;
+    padding: 20px;
+    background-color: #dd9999;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+/* Middle Left Column style */
+.m-left-column {
+    width: 22.5%;
+    padding: 20px;
+    background-color: #df8181;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+/* Middle Right Column style */
+.m-right-column {
+    width: 22.5%;
+    padding: 20px;
+    background-color: #db6f6f;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+/* Right column style */
+.right-column {
+    width: 22.5%;
+    padding: 20px;
+    background-color: #da5858;
+    border-top: 2px solid black;
+}
