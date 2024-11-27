@@ -9,7 +9,7 @@ body {
 .banner {
     text-align: center;
     padding: 20px;
-    background-image: url('images/helllo.jpg');
+    background-image: url('helllo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
